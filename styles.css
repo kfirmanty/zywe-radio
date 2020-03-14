@@ -1,0 +1,64 @@
+body{
+    background-image: linear-gradient(to right, #1700ff , #02ffff);
+
+}
+#content {
+    max-width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    overflow:auto;
+    max-height:600px;
+    box-shadow: 10px 15px #060080;
+}
+
+#page {
+    border: 1px solid;
+    padding: 20px 50px 20px 50px;
+
+    background-color: #fffbf0;
+}
+
+#play-button {
+    border: 1px solid;
+    margin-top: 10px;
+    padding: 15px 30px 15px 30px;
+    box-shadow: 3px 5px #060080;
+    background-color: #fffbf0;
+    font-size: large;
+}
+
+#chat-toggle {
+    border: 1px solid;
+    padding: 15px 30px 15px 30px;
+    box-shadow: 3px 5px #060080;
+    background-color: #fffbf0;
+    font-size: large;
+    display: block;
+    margin-bottom: 7px;
+}
+
+#chat-section {
+
+    position: fixed;
+    bottom: 0;
+    right: 0;
+
+}
+
+.hidden {
+    display: none;
+}
+
+.FixedHeightContainer
+{
+    max-height: 250px;
+}
+.Content
+{
+    max-height:200px;
+    overflow:auto;
+}

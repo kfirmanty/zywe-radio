@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="tufte.css"/>
+    <link rel="stylesheet" href="latex.css"/>
+    <link rel="stylesheet" href="styles.css">
+    <script ype="text/javascript" src="script.js"></script>
+    <title>żywe radio</title>
+  </head>
+
+  <body>
+    <div id="content">
+      <div id="page">
+        <h1><b>Ż y w e</b></h1>
+	<h2>Instruction</h2>
+	<p>Click on a 'play' button below and soon enough you will hear the music.
+          <br>
+          <audio id="player">
+            <source src="${YOUR_HOST}:8000/radio" type="audio/mp3">
+          </audio>
+          <button id="play-button"  onclick="onPlayClick()">Play</button>
+        <p id="info"></p>
+        <p id="alert" style="color: red;"></p>
+        <h2>Upcoming shows</h2>
+        <ul>
+          <li>22-03-2020 20:00 GMT+1 - Example Show</li>
+        </ul>
+        <div class="FixedHeightContainer">
+          <h2>Past shows</h2>
+          <div class="Content">
+            <ul>
+              <li>14-03-2020 18:00 GMT+1 - Example Past Show</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="chat-section">
+      <button id="chat-toggle" onclick="onChatToggleClick()">OPEN CHAT</button>
+      <iframe class="hidden"
+              id="chat"
+              src="https://minnit.chat/${YOUR_CHAT}?embed&transparent&language=en&nickname=" width='300' height='400' style="border:none;" allowTransparency="true"></iframe>
+    </section>
+    <script>
+      window.setInterval(getStatus, 10000);
+    </script>
+  </body>
+</html>
